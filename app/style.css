@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --prefix: tw;
+    --font-unbounded: 'Unbounded', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+:root{
+    --whiteColor-- : #F5F5F7;
+    --blackColor-- : #0B0C10;
+}
+
+.tw-menu-header{
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--whiteColor--);
+}
+
+.tw-footer {
+    border-width: 1px 0px 0px 0px;
+    border-color: var(--whiteColor--);
+}
+
+body {
+    margin: 0;
+    min-height: 200vh; 
+    background-color: var(--blackColor--); 
+    position: relative;
+    overflow-x: hidden; 
+}
+
+.tw-bg{
+    opacity: 20%;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -50%;
+    width: 10000px;
+    height: 10000px; 
+        
+    background-image: 
+        linear-gradient(to right, var(--whiteColor--) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--whiteColor--) 1px, transparent 1px);
+    background-size: 350px 350px; 
+        
+    transform: rotate(45deg);
+    transform-origin: top center;
+        
+    z-index: -1; 
+    pointer-events: none;
+    }
+
+.tw-main{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
