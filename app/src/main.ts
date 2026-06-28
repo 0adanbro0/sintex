@@ -34,6 +34,17 @@ const observer50x = new IntersectionObserver((entries) => {
   rootMargin: "0px 0px 0px 0px" 
 });
 
+let faqBlock:NodeListOf<Element> = document.querySelectorAll(".openFaq");
+let hiddenBlock:NodeListOf<Element> = document.querySelectorAll(".hiddenBlock");
+let cross:NodeListOf<Element> = document.querySelectorAll(".cross");
+
+faqBlock.forEach((el, key)=>{
+  el.addEventListener("click", ()=>{
+    hiddenBlock[key].classList.toggle('active')
+    cross[key].classList.toggle('active')
+  })
+})
+
 document.querySelectorAll('.js-scroll-right50x').forEach(el => observer50x.observe(el));
 document.querySelectorAll('.js-scroll-right50').forEach(el => observer50.observe(el));
 document.querySelectorAll('.js-scroll-right20').forEach(el => observer.observe(el));

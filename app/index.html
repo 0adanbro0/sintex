@@ -24,13 +24,13 @@
 
           <div class="but-nav-menu gap-10 flex items-center">
             <div>
-              <a href="" class="text-[#F5F5F7] text-3xl font-inter font-normal hidden md:flex lg:text-4xl">о нас</a>
+              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">о нас</a>
             </div>
             <div>
-              <a href="" class="text-[#F5F5F7] text-3xl font-inter font-normal hidden md:flex lg:text-4xl">проекты</a>
+              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">проекты</a>
             </div>
             <div>
-              <a href="" class="text-[#F5F5F7] text-3xl font-inter font-normal hidden md:flex lg:text-4xl">контакты</a>
+              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">контакты</a>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
           </div>
         </section>
         <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10">
-          <div class="w-px h-[90vh] bg-[#F5F5F7]"></div>
+          <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10 lg:h-[110vh]">
+          <div class="w-px h-[90vh] bg-[#F5F5F7] lg:h-[110vh]"></div>
             <div class="h-screen flex mt-50 w-0">
               <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
               js-scroll-right20
@@ -240,10 +240,10 @@
         </section>
 
         <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10">
-          <div class="w-px h-[90vh] bg-[#F5F5F7]"></div>
+          <div class="flex w-15 lg:w-30 h-[110vh] relative opacity-50 ml-2 lg:ml-10">
+          <div class="w-px h-[110vh] bg-[#F5F5F7]"></div>
             <div class="h-screen flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
+              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-5 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
               js-scroll-right20
               lg:opacity-50 lg:transform lg:-left-50
               lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
@@ -251,21 +251,77 @@
             </div>
           </div>
 
-          <div class="w-[95vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh]">
-            <div class="w-[95%] lg:w-2/3 mt-20 lg:mt-10 gap-10 flex-col flex lg:gap-30">
+          <div class="w-[95vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh] lg:mt-15">
+            <div class="w-[95%] lg:w-auto mt-20 lg:mt-10 gap-5 flex-col flex lg:gap-5">
 
-              <div class="flex text-[#F5F5F7] h-auto">
-                
+              <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
+                    js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:-translate-x-100
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0">
+                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">1-ый слот свободен</h3>
+                </div>
+                <div class="flex items-end">
+                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
+                    js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:translate-x-50
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Помогите нам заполнить портфолио, выберите любой из тарифов со скидкой 50%!</h2>
+                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex text-[#F5F5F7] h-auto flex-col lg:flex-row
+                    js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:translate-x-50
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0">
+                <div class="flex items-end">
+                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4
+                  js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:-translate-x-100
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Так как это наши первые заказы на этой платформе, мы вложим 200% усилий и времени в разработку каждой детали.</h2>
+                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                  </div>
+                </div>
+                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">2-ой слот свободен</h3>
+                </div>
+              </div>
+
+              <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
+                    js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:-translate-x-100
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0">
+                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">3-ий слот свободен</h3>
+                </div>
+                <div class="flex items-end">
+                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
+                    js-scroll-right50x
+                    lg:opacity-0 lg:transform lg:translate-x-50
+                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Возьмем только 3 бизнеса на этих условиях. Выбирайте любой тариф на сайте со скидкой 50%.</h2>
+                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                  </div>
+                </div>
               </div>
 
             </div>
           </div>
         </section>
 
-        <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10">
-          <div class="w-px h-[90vh] bg-[#F5F5F7]"></div>
-            <div class="h-screen flex mt-50 w-0">
+        <section class="flex w-screen h-auto">
+          <div class="flex w-15 lg:w-30 h-auto relative opacity-50 ml-2 lg:ml-10">
+          <div class="w-px h-auto bg-[#F5F5F7]"></div>
+            <div class="h-auto flex mt-50 w-0">
               <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
               js-scroll-right20
               lg:opacity-50 lg:transform lg:-left-50
@@ -274,11 +330,70 @@
             </div>
           </div>
 
-          <div class="w-[95vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh]">
-            <div class="w-[95%] lg:w-2/3 mt-20 lg:mt-10 gap-10 flex-col flex lg:gap-30">
+          <div class="w-[95vw] lg:w-screen flex justify-center lg:h-auto z-2">
+            <div class="w-[95%] lg:w-4/5 mt-20 lg:mt-40 gap-10 flex-col flex">
 
-              <div class="flex text-[#F5F5F7] h-auto">
-                
+              <div class="flex text-[#F5F5F7] h-auto flex-col gap-4">
+                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
+                    <div class="flex justify-between items-center h-20">
+                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Сколько времени занимает создание сайта?</h2>
+                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                    </div>
+                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                        Время выполнения заказа индивидуально для каждого бизнеса. 
+                        Лендинги создаются в пределах нескольких дней, продвинутый «лендинг+» — за 1–2 недели, а вебсайт под ключ — от 2 недель.
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
+                    <div class="flex justify-between items-center h-20">
+                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Как мы можем гарантировать выполнение заказа?</h2>
+                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                    </div>
+                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                        Мы работаем официально по договору и предоставляем чеки для каждого платежа. Оплата делится на два этапа: 50% предоплаты до начала работы и 50% после полного утверждения проекта.
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
+                    <div class="flex justify-between items-center h-20">
+                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Что требуется от меня для начала работы?</h2>
+                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                    </div>
+                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                        Вам необходимо заполнить бриф и предоставить базовые материалы: тексты, картинки и пожелания по цветовой гамме. Также вы можете поделиться своими предпочтениями в дизайне.
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
+                    <div class="flex justify-between items-center h-20">
+                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Смогу ли я сам редактировать сайт после запуска?</h2>
+                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                    </div>
+                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                        Да. Все тексты сайта вынесены в один простой конфигурационный файл. Вы сможете менять информацию в нем за пару минут, а сам сайт благодаря этому защищен от взломов на 100% и загружается мгновенно.
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
+                    <div class="flex justify-between items-center h-20">
+                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Есть ли адаптивность под разные устройства?</h2>
+                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                    </div>
+                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                        Да, абсолютно все наши веб-сайты имеют адаптивный дизайн и идеально отображаются на любых устройствах — от смартфонов до больших мониторов.
+                      </h3>
+                    </div>
+                  </div>
               </div>
 
             </div>
@@ -326,7 +441,7 @@
             </a>
 
             <div class="flex items-center">
-              <a href="" class="text-[#F5F5F7] text-1xl font-inter font-light md:flex lg:text-2xl">hello@sintex.com</a> 
+              <a href="" class="text-[#F5F5F7] text-1xl font-inter font-light md:flex lg:text-2xl">hello@sintex.by</a> 
             </div>
           </div>
         </footer>
