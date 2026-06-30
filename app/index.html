@@ -4,449 +4,533 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>app</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Разработка вебсайтов под ключ от Sintex">
+    <title>Sintex — Digital Service | Вебсайты под ключ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./iphone (1).webp">
+  <link rel="preload" as="image" href="./macbook (1).webp">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDPRV61L52"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EDPRV61L52');
+  </script>
   </head>
   <body>
-    <div class="tw-main">
-      <div class="tw-bg"></div>
-      <div class="tw-menu-header fixed w-screen flex justify-center z-10 backdrop-blur-md
-              js-scroll-right20
-              lg:opacity-0 lg:transform lg:-translate-y-15
-              lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
-              [&.active]:opacity-100 [&.active]:translate-y-0">
-        <div class="conainer-menu-header m-3 flex w-[90vw] justify-between">
-          <div class="name-company-menu">
-            <a href="" class="contant-name-company-menu text-[#F5F5F7] font-unbounded font-extrabold text-3xl lg:text-5xl tracking-wider">
-              Sintex
-            </a>
-          </div>
+    <div class="tw-main flex 2xl:justify-center 2xl:max-w-[2560px]">
+      <div class="tw-bg-wrapper">
+        <div class="tw-bg"></div>
+      </div>
+      <div class="2xl:max-w-[1920px] lg:w-screen h-full">
+        <div class="tw-menu-header fixed w-screen flex justify-center z-10 backdrop-blur-md 2xl:2xl:max-w-[1920px]
+                js-scroll-right20
+                lg:opacity-0 lg:transform lg:-translate-y-15
+                lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                [&.active]:opacity-100 [&.active]:translate-y-0">
+          <div class="conainer-menu-header m-3 flex w-[90vw] justify-between">
+            <div class="name-company-menu">
+              <a href="./index.html" class="contant-name-company-menu text-[#F5F5F7] font-unbounded font-extrabold text-3xl lg:text-5xl tracking-wider">
+                Sintex
+              </a>
+            </div>
 
-          <div class="but-nav-menu gap-10 flex items-center">
-            <div>
-              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">о нас</a>
-            </div>
-            <div>
-              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">проекты</a>
-            </div>
-            <div>
-              <a href="" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">контакты</a>
+            <div class="but-nav-menu gap-10 flex items-center">
+              <div>
+                <a href="./PAGES/aboutUs.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">о нас</a>
+              </div>
+              <div>
+                <a href="#projects" id="projectsBut" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">проекты</a>
+              </div>
+              <div>
+                <a href="./PAGES/contacts.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">контакты</a>
+              </div>
+
+              <div class="md:hidden burger-menu flex items-center z-30">
+                <div id="burger-menu" class="icon group w-15 h-10 flex flex-col justify-between cursor-pointer">
+
+                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out
+                              group-[.is-open]:-translate-y-8 group-[.is-open]:opacity-0"></div>
+                  
+                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
+                              group-[.is-open]:rotate-45"></div>
+                  
+                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
+                              group-[.is-open]:-translate-y-4.25 group-[.is-open]:-rotate-45"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="block mt-20">
-        <section class="hero w-screen flex justify-center">
-          <div class="w-[95vw] h-screen items-center flex lg:w-[95vw]">
-            <div class="w-125 h-100 lg:w-250">
-              <h2 class="text-[#F5F5F7] font-unbounded font-extrabold text-6xl md:text-7xl lg:text-8xl tracking-wider
-              js-scroll-right50x
-              lg:opacity-0 lg:transform lg:-translate-x-100
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-              [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">Sintex</h2>
-              <h3 class="text-[#86868B] font-unbounded font-bold text-1xl md:text-2xl lg:text-4xl
-              js-scroll-right50x
-              lg:opacity-0 lg:delay-1000 lg:transform lg:-translate-x-100
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-              [&.active]:opacity-100 [&.active]:translate-x-0">DIGITAL SERVICE</h3>
-            </div>
-            <div class="overflow-hidden w-screen h-screen absolute">
-              <img src="./public/iphone.png" width="300px" height="550px" alt="" class="z-[-1] opacity-70 absolute left-[50vw] top-[1vh] md:left-[60vw] md:opacity-100 lg:hidden">
-              <img width="1300px" height="800px" src="./public/macbook.png" alt="" class="z-[-1] hidden absolute left-[40vw] top-[2vh] lg:flex
-              js-scroll-right20
-              lg:opacity-0 lg:transform lg:left-[90vw]
-              lg:transition-all lg:duration-1500 lg:ease-[cubic-bezier(1)]
-              [&.active]:left-[40vw] [&.active]:opacity-100 lg:delay-500">
+        <section id="burgerMenuSection" class="w-screen h-screen bg-[#0B0C10] z-20 [&.active]:flex hidden">
+          <div class="w-screen flex items-center m-10">
+            <div class="flex flex-col gap-30">
+              <div>
+                <a href="./PAGES/aboutUs.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">о нас</a>
+              </div>
+              <div>
+                <a href="#projects" id="projectsBut" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">проекты</a>
+              </div>
+              <div>
+                <a href="./PAGES/contacts.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">контакты</a>
+              </div>
             </div>
           </div>
         </section>
-        <section class="flex">
-          <div class="flex w-15 h-[90vh] lg:h-[90vh] relative opacity-50 ml-2 lg:ml-10">
+        <div class="block mt-20 [&.active]:hidden" id="mainSection">
+          <section class="hero w-screen flex justify-center 2xl:max-w-[1920px]">
+            <div class="w-[95vw] h-screen items-center flex lg:w-[95vw] 2xl:max-w-[1920px]">
+              <div class="w-125 h-100 lg:w-250">
+                <h2 class="text-[#F5F5F7] font-unbounded font-extrabold text-6xl md:text-7xl lg:text-8xl tracking-wider
+                js-scroll-right50x
+                lg:opacity-0 lg:transform lg:-translate-x-100
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">Sintex</h2>
+                <h1 class="text-[#86868B] w-100 font-unbounded font-medium text-[20px] md:text-1xl lg:text-2xl
+                js-scroll-right50x
+                lg:opacity-0 lg:delay-1000 lg:transform lg:-translate-x-60
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                [&.active]:opacity-100 [&.active]:translate-x-0">создание вебсайтов для малого бизнеса под ключ</h1>
+              </div>
+              <div class="overflow-hidden w-screen h-screen absolute 2xl:max-w-[1920px]">
+                <img src="./iphone (1).webp" width="300px" height="550px" alt="" class="z-[-1] opacity-70 absolute left-[50vw] top-[1vh] md:left-[60vw] lg:hidden">
+                <img width="1000px" height="500px" src="./macbook (1).webp" alt="" class="macbook z-[-1] opacity-80 hidden absolute left-[40vw] top-[10vh] lg:flex
+                js-scroll-right20
+                lg:opacity-0 lg:transform lg:left-[90vw]
+                lg:transition-all lg:duration-1500 lg:ease-[cubic-bezier(1)]
+                [&.active]:left-[35vw] [&.active]:opacity-80 lg:delay-500">
+                <img width="1200px" height="700px" src="./Frame 32.webp" alt="" class="desktop z-[-1] hidden absolute left-[40vw] top-[15vh]
+                js-scroll-right20
+                lg:opacity-0 lg:transform lg:left-[90vw]
+                lg:transition-all lg:duration-1500 lg:ease-[cubic-bezier(1)]
+                [&.active]:left-[35vw] [&.active]:opacity-100 lg:delay-500">
+              </div>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="flex w-15 h-[90vh] lg:h-[90vh] relative opacity-50 ml-2 lg:ml-10">
+              <div class="w-px h-full bg-[#F5F5F7]"></div>
+              <div class="h-screen flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 tracking-widest lg:mt-30
+                js-scroll-right20
+                lg:opacity-50 lg:transform -left-15 lg:-left-50
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
+                lg:[&.active]:opacity-100 lg:[&.active]:-left-18">о нас</h2>
+              </div>
+            </div>
+            <div class="lg:block flex justify-center w-[90vw]">
+              <div class="w-[80vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh] 2xl:max-w-[1920px]">
+                <div class="lg:ml-20">
+                  <div class="flex justify-center">
+                    <h2 class="text-[#F5F5F7] text-[19px] lg:text-[25px] font-inter font-light mt-10 w-[95%] lg:w-225 lg:mt-0    
+                        js-scroll-right50
+                        lg:opacity-0 lg:transform lg:translate-y-100
+                        lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <span class="font-extrabold font-unbounded">Sintex —</span> команда из Fullstack-разработчика и UX/UI-дизайнера. 
+                      <br>С нуля упакуем ваш бизнес 
+                      в цифровой среде. Разрабатываем современные адаптивные вебсайты 
+                      и уникальный дизайн. 
+                      Доверяя нам визуальную культуру и техническую сторону вашего бренда, 
+                      вы выделяетесь среди конкурентов и растете в продажах!
+                    </h2>
+                  </div>
+
+                  <div class="h-30 lg:mt-10 flex items-center lg:justify-center lg:w-screen 2xl:max-w-[1920px]
+                        js-scroll-right50x
+                        lg:opacity-0 lg:transform lg:-translate-x-100
+                        lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-x-0">
+                    <a class="text-[#868686] font-normal font-inter text-[20px] group lg:w-225 lg:text-[25px]" href="./PAGES/aboutUs.html">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="flex w-screen 2xl:max-w-[1920px]">
+            <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10 lg:h-[110vh]">
+              <div class="w-px h-[90vh] bg-[#F5F5F7] lg:h-[110vh]"></div>
+              <div class="h-screen flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
+                js-scroll-right20
+                lg:opacity-50 lg:transform lg:-left-50
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
+                lg:[&.active]:opacity-100 lg:[&.active]:-left-18">услуги</h2>
+              </div>
+            </div>
+
+            <div class="w-[95vw] lg:w-screen 2xl:max-w-[1920px] flex justify-center lg:items-center lg:h-[90vh]">
+              <div class="w-[95%] lg:w-2/3 mt-20 lg:mt-10 gap-10 flex-col flex lg:gap-30">
+                <div class="flex text-[#F5F5F7] h-auto
+                      js-scroll-right20
+                      lg:opacity-0 lg:transform lg:translate-y-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-y-0">
+                  <div class="flex w-10 h-full">
+                    <h2 class="text-[#F5F5F7] text-1xl lg:text-[22px] font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
+                      [&.active]:opacity-100 [&.active]:translate-x-0">ОТ 700BYN</h2>
+                  </div>
+                  <div class="block">
+                    <div>
+                      <h2 class="text-3xl lg:text-5xl font-unbounded font-bold">Вебсайт под ключ</h2>
+                    </div>
+                    <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
+                      <div class="flex items-center">
+                        <div class="bg-[#6FC276] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">подходит для магазинов</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">React</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-[20px] lg:ml-2">Vite</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">TS|HTML|CSS</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">Figma</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-[20px] lg:ml-2">MongoDB</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">Express.js</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex text-[#F5F5F7] h-auto
+                      js-scroll-right20
+                      lg:opacity-0 lg:transform lg:translate-y-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-y-0">
+                  <div class="flex w-10 h-full">
+                    <h2 class="text-[#F5F5F7] text-1xl lg:text-[22px] font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
+                      [&.active]:opacity-100 [&.active]:translate-x-0">390BYN</h2>
+                  </div>
+                  <div class="block">
+                    <div>
+                      <h2 class="text-3xl font-unbounded lg:text-5xl font-bold">Создание лендинга</h2>
+                    </div>
+                    <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
+                      <div class="flex items-center">
+                        <div class="bg-[#6FC276] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">подходит для личного бренда</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">Figma</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-[20px] lg:ml-2">Tilda</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex text-[#F5F5F7] h-auto
+                      js-scroll-right20
+                      lg:opacity-0 lg:transform lg:translate-y-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-y-0">
+                  <div class="flex w-10 h-full">
+                    <h2 class="text-[#F5F5F7] text-1xl lg:text-[22px] font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
+                      [&.active]:opacity-100 [&.active]:translate-x-0">590BYN</h2>
+                  </div>
+                  <div class="block">
+                    <div>
+                      <h2 class="text-3xl font-unbounded lg:text-5xl font-bold">Создание лендинга+</h2>
+                    </div>
+                    <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
+                      <div class="flex items-center">
+                        <div class="bg-[#6FC276] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">подходит для веб-сервисов</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">React</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-[20px] lg:ml-2">Vite</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">TS|HTML|CSS</h3>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="bg-[#1A2B4C] w-4 h-4 lg:w-5 lg:h-5 rounded-[20px]"></div>
+                        <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-[20px] lg:ml-2">Figma</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="flex w-screen 2xl:max-w-[1920px]">
+            <div class="flex w-15 lg:w-30 h-auto relative opacity-50 ml-2 lg:ml-10" id="projects">
             <div class="w-px h-full bg-[#F5F5F7]"></div>
-            <div class="h-screen flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 tracking-widest lg:mt-30
-              js-scroll-right20
-              lg:opacity-50 lg:transform -left-15 lg:-left-50
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
-              lg:[&.active]:opacity-100 lg:[&.active]:-left-18">о нас</h2>
-            </div>
-          </div>
-          <div class="w-[80vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh]">
-            <div class="lg:ml-20">
-              <div class="flex justify-center">
-                <h2 class="text-[#F5F5F7] text-[19px] lg:text-[30px] font-inter font-light mt-20 w-[95%] lg:w-225 lg:mt-0    
-                    js-scroll-right50
-                    lg:opacity-0 lg:transform lg:translate-y-100
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-y-0">
-                  <span class="font-extrabold font-unbounded">Sintex —</span> команда из Fullstack-разработчика и UX/UI-дизайнера. 
-                  <br>С нуля упакуем ваш бизнес 
-                  в цифровой среде. Разрабатываем современные адаптивные вебсайты 
-                  и уникальный дизайн. 
-                  Доверяя нам визуальную культуру и техническую сторону вашего бренда, 
-                  вы выделяетесь среди конкурентов и растете в продажах!
-                </h2>
+              <div class="h-screen flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-5 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
+                js-scroll-right20
+                lg:opacity-50 lg:transform lg:-left-50
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
+                lg:[&.active]:opacity-100 lg:[&.active]:-left-18">проекты</h2>
               </div>
+            </div>
 
-              <div class="h-30 lg:mt-10 flex items-center lg:justify-center lg:w-screen
+            <div class="w-[95vw] lg:w-screen 2xl:max-w-[1920px] flex justify-center lg:items-center lg:h-[90vh] lg:mt-15">
+              <div class="w-[95%] lg:w-auto mt-20 lg:mt-10 gap-5 flex-col flex lg:gap-5">
+
+                <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:-translate-x-100
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0">
+                  <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                    <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">1-ый слот свободен</h3>
+                  </div>
+                  <div class="flex items-end">
+                    <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:translate-x-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                      <h2 class="font-inter font-light text-[16px] lg:text-[20px]">Помогите нам заполнить портфолио, выберите любой из тарифов со скидкой 50%!</h2>
+                      <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="./PAGES/contacts.html">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex text-[#F5F5F7] h-auto flex-col lg:flex-row
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:translate-x-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0">
+                  <div class="flex items-end">
+                    <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4
                     js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-100
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0">
-                <a class="text-[#868686] font-normal font-inter text-[20px] group lg:w-225 lg:text-[25px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                      lg:opacity-0 lg:transform lg:-translate-x-100
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                      <h2 class="font-inter font-light text-[16px] lg:text-[20px]">Так как это наши первые заказы на этой платформе, мы вложим 200% усилий и времени в разработку каждой детали.</h2>
+                      <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="./PAGES/contacts.html">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                    </div>
+                  </div>
+                  <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                    <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">2-ой слот свободен</h3>
+                  </div>
+                </div>
+
+                <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:-translate-x-100
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0">
+                  <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
+                    <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">3-ий слот свободен</h3>
+                  </div>
+                  <div class="flex items-end">
+                    <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
+                      js-scroll-right50x
+                      lg:opacity-0 lg:transform lg:translate-x-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
+                      <h2 class="font-inter font-light text-[16px] lg:text-[20px]">Возьмем только 3 бизнеса на этих условиях. Выбирайте любой тариф на сайте со скидкой 50%.</h2>
+                      <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="./PAGES/contacts.html">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-          </div>
-        </section>
-        <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[90vh] relative opacity-50 ml-2 lg:ml-10 lg:h-[110vh]">
-          <div class="w-px h-[90vh] bg-[#F5F5F7] lg:h-[110vh]"></div>
-            <div class="h-screen flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
-              js-scroll-right20
-              lg:opacity-50 lg:transform lg:-left-50
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
-              lg:[&.active]:opacity-100 lg:[&.active]:-left-18">услуги</h2>
-            </div>
-          </div>
+          </section>
 
-          <div class="w-[95vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh]">
-            <div class="w-[95%] lg:w-2/3 mt-20 lg:mt-10 gap-10 flex-col flex lg:gap-30">
-              <div class="flex text-[#F5F5F7] h-auto
-                    js-scroll-right20
-                    lg:opacity-0 lg:transform lg:translate-y-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-y-0">
-                <div class="flex w-10 h-full">
-                  <h2 class="text-[#868686] text-1xl lg:text-2xl font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
-                    [&.active]:opacity-100 [&.active]:translate-x-0">ОТ 700BYN</h2>
-                </div>
-                <div class="block">
-                  <div>
-                    <h2 class="text-3xl lg:text-6xl font-unbounded font-bold">Вебсайт под ключ</h2>
-                  </div>
-                  <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
-                    <div class="flex items-center">
-                      <div class="bg-[#6FC276] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">подходит для магазинов</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">React</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-2xl lg:ml-2">Vite</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">TS|HTML|CSS</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">Figma</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-2xl lg:ml-2">MongoDB</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">Express.js</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex text-[#F5F5F7] h-auto
-                    js-scroll-right20
-                    lg:opacity-0 lg:transform lg:translate-y-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-y-0">
-                <div class="flex w-10 h-full">
-                  <h2 class="text-[#868686] text-1xl lg:text-2xl font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
-                    [&.active]:opacity-100 [&.active]:translate-x-0">390BYN</h2>
-                </div>
-                <div class="block">
-                  <div>
-                    <h2 class="text-3xl font-unbounded lg:text-6xl font-bold">Создание лендинга</h2>
-                  </div>
-                  <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
-                    <div class="flex items-center">
-                      <div class="bg-[#6FC276] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">подходит для личного бренда</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">Figma</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-2xl lg:ml-2">Tilda</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex text-[#F5F5F7] h-auto
-                    js-scroll-right20
-                    lg:opacity-0 lg:transform lg:translate-y-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-y-0">
-                <div class="flex w-10 h-full">
-                  <h2 class="text-[#868686] text-1xl lg:text-2xl font-unbounded font-medium rotate-90 relative mt-8 h-0 w-8 flex items-center whitespace-nowrap
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-50 translate-x-0
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)] lg:delay-1000
-                    [&.active]:opacity-100 [&.active]:translate-x-0">590BYN</h2>
-                </div>
-                <div class="block">
-                  <div>
-                    <h2 class="text-3xl font-unbounded lg:text-6xl font-bold">Создание лендинга+</h2>
-                  </div>
-                  <div class="flex w-full lg:w-165 lg:gap-6 flex-wrap gap-1 lg:mt-3">
-                    <div class="flex items-center">
-                      <div class="bg-[#6FC276] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">подходит для веб-сервисов</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">React</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-[16px] items-center ml-1 lg:text-2xl lg:ml-2">Vite</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">TS|HTML|CSS</h3>
-                    </div>
-                    <div class="flex items-center">
-                      <div class="bg-[#1A2B4C] w-4 h-4 lg:w-6 lg:h-6 rounded-[20px]"></div>
-                      <h3 class="font-inter text-[#868686] font-semibold text-1xl items-center ml-1 lg:text-2xl lg:ml-2">Figma</h3>
-                    </div>
-                  </div>
-                </div>
+          <section class="flex w-screen 2xl:max-w-[1920px] h-auto">
+            <div class="flex w-15 lg:w-30 h-auto relative opacity-50 ml-2 lg:ml-10">
+            <div class="w-px h-auto bg-[#F5F5F7]"></div>
+              <div class="h-auto flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
+                js-scroll-right20
+                lg:opacity-50 lg:transform lg:-left-50
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
+                lg:[&.active]:opacity-100 lg:[&.active]:-left-18">faq</h2>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[110vh] relative opacity-50 ml-2 lg:ml-10">
-          <div class="w-px h-[110vh] bg-[#F5F5F7]"></div>
-            <div class="h-screen flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-5 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
-              js-scroll-right20
-              lg:opacity-50 lg:transform lg:-left-50
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
-              lg:[&.active]:opacity-100 lg:[&.active]:-left-18">проекты</h2>
+            <div class="w-[95vw] lg:w-screen 2xl:max-w-[1920px] flex justify-center lg:h-auto z-2">
+              <div class="w-[95%] lg:w-4/5 mt-20 lg:mt-40 gap-10 flex-col flex">
+
+                <div class="flex text-[#F5F5F7] h-auto flex-col gap-4">
+                    <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000
+                        js-scroll-right20
+                        lg:opacity-0 lg:transform lg:translate-y-50
+                        lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <div class="flex justify-between items-center h-20">
+                        <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Сколько времени занимает создание сайта?</h2>
+                        <img src="./cross (2).webp" loading="lazy" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                      </div>
+                      <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                        <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                          Время выполнения заказа индивидуально для каждого бизнеса. 
+                          Лендинги создаются в пределах нескольких дней, продвинутый «лендинг+» — за 1–2 недели, а вебсайт под ключ — от 2 недель.
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000
+                        js-scroll-right20
+                        lg:opacity-0 lg:transform lg:translate-y-50
+                        lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <div class="flex justify-between items-center h-20">
+                        <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Как мы можем гарантировать выполнение заказа?</h2>
+                        <img src="./cross (2).webp" loading="lazy" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                      </div>
+                      <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                        <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                          Мы работаем официально по договору и предоставляем чеки для каждого платежа. Оплата делится на два этапа: 50% предоплаты до начала работы и 50% после полного утверждения проекта.
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000
+                        js-scroll-right20
+                        lg:opacity-0 lg:transform lg:translate-y-50
+                        lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <div class="flex justify-between items-center h-20">
+                        <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Что требуется от меня для начала работы?</h2>
+                        <img src="./cross (2).webp" loading="lazy" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                      </div>
+                      <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                        <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                          Вам необходимо заполнить бриф и предоставить базовые материалы: тексты, картинки и пожелания по цветовой гамме. Также вы можете поделиться своими предпочтениями в дизайне.
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000
+                        js-scroll-right20
+                        lg:opacity-0 lg:transform lg:translate-y-50
+                        lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <div class="flex justify-between items-center h-20">
+                        <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Смогу ли я сам редактировать сайт после запуска?</h2>
+                        <img src="./cross (2).webp" loading="lazy" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                      </div>
+                      <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                        <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                          Да. Все тексты сайта вынесены в один простой конфигурационный файл. Вы сможете менять информацию в нем за пару минут, а сам сайт благодаря этому защищен от взломов на 100% и загружается мгновенно.
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000
+                        js-scroll-right20
+                        lg:opacity-0 lg:transform lg:translate-y-50
+                        lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
+                        [&.active]:opacity-100 [&.active]:translate-y-0">
+                      <div class="flex justify-between items-center h-20">
+                        <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Есть ли адаптивность под разные устройства?</h2>
+                        <img src="./cross (2).webp" loading="lazy" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
+                      </div>
+                      <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
+                        <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
+                          Да, абсолютно все наши веб-сайты имеют адаптивный дизайн и идеально отображаются на любых устройствах — от смартфонов до больших мониторов.
+                        </h3>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
             </div>
-          </div>
+          </section>
 
-          <div class="w-[95vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh] lg:mt-15">
-            <div class="w-[95%] lg:w-auto mt-20 lg:mt-10 gap-5 flex-col flex lg:gap-5">
+          <section class="flex w-screen 2xl:max-w-[1920px] lg:h-225">
+            <div class="flex w-15 lg:w-30 h-full relative opacity-50 ml-2 lg:ml-10 lg:h-full">
+              <div class="w-px h-auto bg-[#F5F5F7] lg:h-full"></div>
+              <div class="h-[60vh] flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
+                js-scroll-right20
+                lg:opacity-50 lg:transform lg:-left-50
+                lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
+                lg:[&.active]:opacity-100 lg:[&.active]:-left-18">контакты</h2>
+              </div>
+            </div>
 
-              <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-100
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0">
-                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
-                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">1-ый слот свободен</h3>
+            <div class="w-[95vw] lg:w-screen 2xl:max-w-[1920px] flex justify-center items-center lg:h-[90vh]">
+              <div class="w-75 md:w-full lg:w-2/3 gap-10 flex-col flex lg:gap-30">
+
+                <div class="flex text-[#F5F5F7] h-[25vh] md:justify-center lg:justify-start
+                      js-scroll-right20
+                      lg:opacity-0 lg:transform lg:translate-y-50
+                      lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
+                      [&.active]:opacity-100 [&.active]:translate-y-0">
+                  <a class="text-[#F5F5F7] w-75 font-normal font-inter text-[50px] group lg:w-170 lg:text-8xl" href="./PAGES/contacts.html">ЗАКАЗАТЬ ВЕБСАЙТ <span class="group-hover:ml-10 transition-all duration-300 md:visible -visible">—</span></a>
                 </div>
-                <div class="flex items-end">
-                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:translate-x-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
-                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Помогите нам заполнить портфолио, выберите любой из тарифов со скидкой 50%!</h2>
-                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
-                  </div>
+
+              </div>
+            </div>
+          </section>
+
+
+          <footer class="tw-footer w-screen 2xl:max-w-[1920px] flex justify-center z-10 backdrop-blur-md">
+            <div class="m-3 flex w-[95vw] justify-between">
+              <div class="block md:flex items-center h-full md:gap-1">
+                <div class="flex justify-center md:justify-start">
+                  <h2 class="text-[#F5F5F7] font-unbounded font-medium text-[16px] md:text-[20px] flex items-center">
+                    ©
+                  </h2>
+                  <h2 class="text-[#F5F5F7] font-unbounded font-medium text-[16px] md:text-[20px] flex items-center">
+                    sintex
+                  </h2>
                 </div>
+                <h2 class="text-[#F5F5F7] hidden md:flex font-unbounded font-medium text-1xl lg:text-3xl items-center">|</h2>
+                <a href="./PAGES/politics.html" class="text-[10px] w-10 md:w-20 md:text-[16px] text-blue-600">политика конфиденциальности</a>
               </div>
 
-              <div class="flex text-[#F5F5F7] h-auto flex-col lg:flex-row
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:translate-x-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0">
-                <div class="flex items-end">
-                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4
-                  js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-100
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
-                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Так как это наши первые заказы на этой платформе, мы вложим 200% усилий и времени в разработку каждой детали.</h2>
-                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
-                  </div>
-                </div>
-                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
-                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">2-ой слот свободен</h3>
-                </div>
+              <a href="https://github.com/0adanbro0" target="_blank" class="flex items-center">
+                <img class=" w-5 h-5 md:w-10 md:h-10" loading="lazy" src="./Frame-33 (1).webp" alt="">
+              </a>
+
+              <div class="flex items-center">
+                <a href="mailto:hello@google.com" class="text-[#F5F5F7] text-[16px] font-inter font-light md:flex md:text-[20px]">hello@sintex.by</a> 
               </div>
-
-              <div class="flex text-[#F5F5F7] h-auto flex-col-reverse lg:flex-row
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:-translate-x-100
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0">
-                <div class="w-full h-[15vh] bg-[#F5F5F7] flex justify-center items-center rounded-2xl lg:w-[55vw] lg:h-[30vh]">
-                  <h3 class="font-unbounded font-extrabold text-[20px] text-[#0B0C10] lg:text-3xl">3-ий слот свободен</h3>
-                </div>
-                <div class="flex items-end">
-                  <div class="flex m-2 lg:w-70 flex-col gap-2 lg:gap-4 lg:m-4
-                    js-scroll-right50x
-                    lg:opacity-0 lg:transform lg:translate-x-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-x-0 lg:delay-500">
-                    <h2 class="font-inter font-light text-[16px] lg:text-[24px]">Возьмем только 3 бизнеса на этих условиях. Выбирайте любой тариф на сайте со скидкой 50%.</h2>
-                    <a class="text-[#868686] font-normal font-inter text-[16px] group lg:w-60 lg:text-[20px]" href="">УЗНАТЬ БОЛЬШЕ <span class="duration-300 group-hover:ml-3">—</span></a>
-                  </div>
-                </div>
-              </div>
-
             </div>
-          </div>
-        </section>
-
-        <section class="flex w-screen h-auto">
-          <div class="flex w-15 lg:w-30 h-auto relative opacity-50 ml-2 lg:ml-10">
-          <div class="w-px h-auto bg-[#F5F5F7]"></div>
-            <div class="h-auto flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
-              js-scroll-right20
-              lg:opacity-50 lg:transform lg:-left-50
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
-              lg:[&.active]:opacity-100 lg:[&.active]:-left-18">faq</h2>
-            </div>
-          </div>
-
-          <div class="w-[95vw] lg:w-screen flex justify-center lg:h-auto z-2">
-            <div class="w-[95%] lg:w-4/5 mt-20 lg:mt-40 gap-10 flex-col flex">
-
-              <div class="flex text-[#F5F5F7] h-auto flex-col gap-4">
-                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
-                    <div class="flex justify-between items-center h-20">
-                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Сколько времени занимает создание сайта?</h2>
-                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
-                    </div>
-                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
-                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
-                        Время выполнения заказа индивидуально для каждого бизнеса. 
-                        Лендинги создаются в пределах нескольких дней, продвинутый «лендинг+» — за 1–2 недели, а вебсайт под ключ — от 2 недель.
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
-                    <div class="flex justify-between items-center h-20">
-                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Как мы можем гарантировать выполнение заказа?</h2>
-                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
-                    </div>
-                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
-                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
-                        Мы работаем официально по договору и предоставляем чеки для каждого платежа. Оплата делится на два этапа: 50% предоплаты до начала работы и 50% после полного утверждения проекта.
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
-                    <div class="flex justify-between items-center h-20">
-                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Что требуется от меня для начала работы?</h2>
-                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
-                    </div>
-                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
-                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
-                        Вам необходимо заполнить бриф и предоставить базовые материалы: тексты, картинки и пожелания по цветовой гамме. Также вы можете поделиться своими предпочтениями в дизайне.
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
-                    <div class="flex justify-between items-center h-20">
-                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Смогу ли я сам редактировать сайт после запуска?</h2>
-                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
-                    </div>
-                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
-                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
-                        Да. Все тексты сайта вынесены в один простой конфигурационный файл. Вы сможете менять информацию в нем за пару минут, а сам сайт благодаря этому защищен от взломов на 100% и загружается мгновенно.
-                      </h3>
-                    </div>
-                  </div>
-
-                  <div class="openFaq bg-[#0b0c10b8] border lg:rounded-[20px] rounded-[10px]  border-[#F5F5F7] w-full h-auto cursor-pointer transition-all duration-3000">
-                    <div class="flex justify-between items-center h-20">
-                      <h2 class="lg:m-6 font-inter font-light lg:text-2xl text-[16px] m-2">Есть ли адаптивность под разные устройства?</h2>
-                      <img src="./public/cross.png" class="cross lg:w-10 lg:h-10 h-8 w-8 m-4 lg:m-6 [&.active]:-rotate-315 transition-all ease-in-out duration-300" alt="">
-                    </div>
-                    <div class="hiddenBlock flex max-h-0 opacity-0 overflow-hidden transition-all duration-400 ease-in-out [&.active]:max-h-50 [&.active]:opacity-100">
-                      <h3 class="lg:m-6 font-inter font-light lg:text-lg text-gray-300 text-[16px] m-2">
-                        Да, абсолютно все наши веб-сайты имеют адаптивный дизайн и идеально отображаются на любых устройствах — от смартфонов до больших мониторов.
-                      </h3>
-                    </div>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section class="flex w-screen">
-          <div class="flex w-15 lg:w-30 h-[70vh] relative opacity-50 ml-2 lg:ml-10 lg:h-screen">
-          <div class="w-px h-[70vh] bg-[#F5F5F7] lg:h-screen"></div>
-            <div class="h-screen flex mt-50 w-0">
-              <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] lg:mt-30 font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 -left-15 tracking-widest
-              js-scroll-right20
-              lg:opacity-50 lg:transform lg:-left-50
-              lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
-              lg:[&.active]:opacity-100 lg:[&.active]:-left-18">контакты</h2>
-            </div>
-          </div>
-
-          <div class="w-[95vw] lg:w-screen flex justify-center items-center lg:h-[90vh]">
-            <div class="w-[95%] lg:w-2/3 gap-10 flex-col flex lg:gap-30">
-
-              <div class="flex text-[#F5F5F7] h-[25vh]
-                    js-scroll-right20
-                    lg:opacity-0 lg:transform lg:translate-y-50
-                    lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
-                    [&.active]:opacity-100 [&.active]:translate-y-0">
-                <a class="text-[#F5F5F7] font-normal font-inter text-[50px] group lg:w-170 lg:text-8xl" href="">ЗАКАЗАТЬ ВЕБСАЙТ <span class="group-hover:ml-10 transition-all duration-300">—</span></a>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-
-        <footer class="tw-footer w-screen flex justify-center z-10 backdrop-blur-md">
-          <div class="m-3 flex w-[90vw] justify-between">
-            <div class="flex items-center">
-              <h2 class="text-[#F5F5F7] font-inter font-light text-1xl lg:text-3xl">
-                Реквизиты
-              </h2>
-            </div>
-
-            <a href="https://github.com/0adanbro0" target="_blank">
-              <img class="w-10 h-10" src="./public/Frame 33.png" alt="">
-            </a>
-
-            <div class="flex items-center">
-              <a href="" class="text-[#F5F5F7] text-1xl font-inter font-light md:flex lg:text-2xl">hello@sintex.by</a> 
-            </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
