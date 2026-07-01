@@ -224,7 +224,7 @@ document.getElementById("butSend")?.addEventListener("click", (event) => {
           tarif: selectedValue.innerHTML
         };
         
-        fetch('http://localhost:3000/api/send-telegram', {
+        fetch('/api/send-telegram', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
