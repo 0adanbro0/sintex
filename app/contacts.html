@@ -2,17 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./fav3006_Монтажная область 1.webp" />
+    <link rel="icon" type="image/png" href="./0307 черный фон_Монтажная область 1.png" sizes="96x96" />
+    <link rel="shortcut icon" href="./0307 черный фон_Монтажная область 1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./0307 черный фон_Монтажная область 1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Разработка вебсайтов для малого бизнеса под ключ от команды Sintex">
     <title>Sintex — Digital Service | Вебсайты под ключ</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./output.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDPRV61L52"></script>
   <script>
@@ -22,9 +18,11 @@
 
     gtag('config', 'G-EDPRV61L52');
   </script>
+    <script type="module" crossorigin src="./src/main.ts"></script>
+    <link rel="stylesheet" crossorigin href="./style.css">
   </head>
   <body>
-    <div class="tw-main2 relative w-screen h-screen overflow-hidden flex 2xl:justify-center 2xl:max-w-[2560px]">
+    <div class="tw-main2 relative w-screen overflow-hidden flex 2xl:justify-center 2xl:max-w-[2560px] min-h-100 lg:min-h-200">
       <div class="2xl:max-w-[1920px] lg:w-screen">
         <div id="toast-container" class="fixed bottom-4 right-4 max-sm:bottom-6 max-sm:left-4 max-sm:right-4 z-50 flex flex-col gap-3 pointer-events-none items-end max-sm:items-center"></div>
 
@@ -32,204 +30,314 @@
         <div class="tw-bg-wrapper">
           <div class="tw-bg"></div>
         </div>
-        <div class="tw-menu-header fixed w-screen flex justify-center z-10 backdrop-blur-md 2xl:2xl:max-w-[1920px]
+        <header class="tw-menu-header fixed w-screen flex h-25 justify-center z-50 2xl:max-w-[1920px] transition-all duration-1000 px-6 py-3.5
                 js-scroll-right20
-                lg:opacity-0 lg:transform lg:-translate-y-15
-                lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
-                [&.active]:opacity-100 [&.active]:translate-y-0">
-          <div class="conainer-menu-header m-3 flex w-[90vw] justify-between">
-            <div class="name-company-menu">
-              <a href="./index.html" class="contant-name-company-menu text-[#F5F5F7] font-unbounded font-extrabold text-3xl lg:text-5xl tracking-wider">
-                Sintex
+                lg:opacity-0 lg:transform lg:-translate-y-10
+                lg:transition-all
+                [&.active]:opacity-100 [&.active]:translate-y-0 lg:ease-[cubic-bezier(0.16,1,0.3,1)]">
+          <div class="container-menu-header flex w-[90vw] justify-between items-center ">
+            
+            <!-- Блок Логотипа -->
+            <div class="name-company-menu flex items-center">
+              <a href="/" class="contant-name-company-menu flex items-center transition-transform duration-300 hover:scale-105" aria-label="Sintex">
+                <img src="/0307 черный фон_Монтажная область 1.webp" width="50" height="50" alt="Sintex Logo" class="object-contain rounded-xl filter drop-shadow-[0_2px_10px_rgba(255,255,255,0.1)]">
               </a>
             </div>
 
-            <div class="but-nav-menu gap-10 flex items-center">
-              <div>
-                <a href="./aboutUs.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">о нас</a>
+            <!-- Главная навигация с групповым эффектом фокуса (Nav Group) -->
+            <div class="but-nav-menu gap-8 lg:gap-12 flex items-center group/nav">
+              
+              <div class="relative group/link">
+                <a href="./aboutUs.html" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">о&nbsp;нас</a>
+            
               </div>
-              <div>
-                <a href="./contacts.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">контакты</a>
+                
+              <div class="relative group/link">
+                <a href="./#projects" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">проекты</a>
+              </div>
+                
+              <div class="relative group/link">
+                <a href="./contacts.html" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">контакты</a>
               </div>
 
               <div class="md:hidden burger-menu flex items-center z-30">
-                <div id="burger-menu" class="icon group w-15 h-10 flex flex-col justify-between cursor-pointer">
-
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out
+                <div id="burger-menu" class="icon group w-10 h-7 flex flex-col justify-between cursor-poGeist">
+                  
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out
                               group-[.is-open]:-translate-y-8 group-[.is-open]:opacity-0"></div>
                   
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out origin-center
                               group-[.is-open]:rotate-45"></div>
                   
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
-                              group-[.is-open]:-translate-y-4.25 group-[.is-open]:-rotate-45"></div>
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out origin-center
+                              group-[.is-open]:-translate-y-3 group-[.is-open]:-rotate-45"></div>
                 </div>
               </div>
+
             </div>
           </div>
-        </div>
+        </header>
 
-        <section id="burgerMenuSection" class="w-screen h-screen bg-[#0B0C10] z-20 [&.active]:flex hidden">
-          <div class="w-screen flex items-center m-10">
-            <div class="flex flex-col gap-30">
-              <div>
-                <a href="./aboutUs.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">о нас</a>
+        <section id="burgerMenuSection" class="w-screen min-h-200 bg-[#0B0C10] inset-0 z-40 [&.active]:flex hidden flex-col justify-between p-8 pt-32 overflow-y-auto">
+
+          <div class="w-full flex flex-col gap-8 relative z-10 pl-2">
+            <div>
+              <a href="./aboutUs.html" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                о нас
+              </a>
+            </div>
+            <div>
+              <a href="#projects" id="projectsBut" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                проекты
+              </a>
+            </div>
+            <div>
+              <a href="./contacts.html" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                контакты
+              </a>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col gap-8 relative z-10 mt-auto pt-12 border-t border-white/[0.04]">
+              
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-between items-start font-gilroy">
+              <div class="flex flex-col gap-2">
+                <span class="text-[#86868B] text-xs uppercase tracking-widest font-semibold">Связь в Telegram</span>
+                <a href="https://t.me/SintexTeam" target="_blank" class="text-[#F5F5F7] text-lg font-medium hover:text-white flex items-center gap-2">
+                  <span>@SintexTeam</span>
+                </a>
               </div>
-              <div>
-                <a href="./contacts.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">контакты</a>
+              <div class="flex flex-col gap-2">
+                <span class="text-[#86868B] text-xs uppercase tracking-widest font-semibold">Звонок менеджеру</span>
+                <a href="tel:+375 (44) 497-44-76" class="text-[#F5F5F7] text-lg font-medium tracking-wide">
+                  +375 (44) 497-44-76
+                </a>
               </div>
             </div>
+
+            <!-- Юридический микро-футер -->
+            <div class="text-[10px] text-[#444449] font-mono leading-relaxed space-y-1">
+              <p>© 2026 Sintex. Разработка сайтов под ключ.</p>
+              <p>плательщик НПД : Дьяченко Елена Леонидовна. Работа по договору.</p>
+            </div>
+
           </div>
         </section>
+
+
         <div class="block mt-18 [&.active]:hidden" id="mainSection">
           <section class="flex">
-            <div class="flex w-15 h-[90vh] lg:h-[90vh] relative opacity-50 ml-2 lg:ml-10">
-              <div class="w-px h-screen bg-[#F5F5F7]"></div>
-              <div class="h-screen flex mt-50 w-0">
-                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] font-unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 tracking-widest lg:mt-20
+            <div class="flex w-15 h-auto lg:h-auto relative opacity-50 ml-2 lg:ml-10">
+              <div class="w-px h-auto bg-[#F5F5F7]"></div>
+              <div class="min-h-70 sm:min-h-120 lg:min-h-220 flex mt-50 w-0">
+                <h2 class="text-[#F5F5F7] text-[70px] lg:text-[110px] font-Unbounded font-extrabold absolute rotate-90 w-75 lg:w-110 h-0 tracking-widest lg:mt-30
                 js-scroll-right20
-                lg:opacity-50 lg:transform -left-15 lg:-left-50
+                lg:opacity-50 lg:transform -left-15 lg:-left-30
                 lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(0.16,1,0.3,1)]
                 lg:[&.active]:opacity-100 lg:[&.active]:-left-18">контакты</h2>
               </div>
             </div>
-            <div class="w-[80vw] lg:w-screen flex justify-center lg:items-center lg:h-[90vh] 2xl:max-w-[1920px]">
+            <div class="w-[80vw] lg:w-screen flex justify-center lg:items-center min-h-160 sm:min-h-100 lg:min-h-220 2xl:max-w-[1920px]">
               <div class="lg:ml-25">
-                <div class="max-w-250 mt-10">
-                  <h2 class="text-[#F5F5F7] text-[19px] lg:text-[30px] font-inter font-light mt-20 w-[90%] lg:w-220 lg:mt-0    
+                <div class="w-full max-w-4xl mt-10">
+                  <h2 class="text-[#868686] text-[19px] lg:text-[30px] font-gilroy font-light leading-relaxed mt-20 lg:mt-0    
                       js-scroll-right50x
                       lg:opacity-0 lg:transform lg:-translate-x-100
                       lg:transition-all lg:duration-1000 lg:ease-[cubic-bezier(1)]
                       [&.active]:opacity-100 [&.active]:translate-x-0">
                     Добрый день! Наш бизнес
+                    
+                    <!-- Инпут: Название -->
                     <input 
                       id="name"
                       type="text" 
-                      placeholder="Google" 
-                      class="max-w-100 autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_#0B0C10] autofill:text-white      field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#868686] underline underline-offset-4 decoration-[#868686] lg:text[30px] outline-none focus:ring-0"
+                      placeholder="Название" 
+                      size="6"
+                      class="max-w-full [::-webkit-credentials-edit-button]:hidden autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_none] field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#F5F5F7] font-medium placeholder-[#F5F5F7] underline underline-offset-8 decoration-[#868686]/40 focus:decoration-[#F5F5F7] focus:text-[#F5F5F7] transition-colors outline-none focus:ring-0"
                     >
-                    ищет надежных разработчиков. Нам нужна услуга 
+                    ищет надежных разработчиков. Нам&nbsp;нужна услуга 
                     
-
-
-                    <div class="relative inline-block align-baseline font-medium font-inter">
+                    <div class="relative inline-block align-baseline font-medium">
                         
                         <button 
                           type="button" 
                           id="custom-select-btn"
-                          class="inline-flex items-center font-medium text-[#868686] underline underline-offset-[6px] decoration-[#868686] pr-5 cursor-pointer outline-none hover:text-zinc-200 transition-colors"
+                          class="inline-flex items-center font-medium text-[#F5F5F7] hover:text-[#F5F5F7] underline underline-offset-8 decoration-[#868686]/40 hover:decoration-[#F5F5F7] pr-2 cursor-pointer outline-none transition-all duration-300"
                         >
-                          <span id="selected-value">создания лендинга+</span>
+                          <span id="selected-value" class="font-bold">создания лендинга+</span>
+                          <svg class="w-3 h-3 ml-1.5 opacity-40 group-hover:opacity-100 transition-opacity inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                          </svg>
                         </button>
 
                         <input type="hidden" name="service" id="select-hidden-input" value="mobile">
 
                         <div 
                           id="custom-select-dropdown" 
-                          class="hidden absolute left-0 top-full mt-2 w-max bg-[#0B0C10] border border-[#F5F5F7] shadow-[0_10px_25px_-5px_rgba(0,0,0,0.3)] py-1 z-50 rounded-md"
+                          class="hidden absolute left-0 top-full mt-3 w-max bg-[#0D0D11]/90 border border-white/5 shadow-[0_20px_50px_rgba(0,0,0,0.6)] py-1.5 z-50 rounded-xl backdrop-blur-xl"
                         >
                           <button 
                             type="button" 
                             data-value="mobile" 
-                            class="select-item block w-full text-left px-4 py-2 text-[#868686] hover:bg-[#212329] transition-colors text-base font-normal outline-none"
+                            class="select-item block w-full text-left px-5 py-2.5 text-[#F5F5F7] hover:text-[#F5F5F7] hover:bg-white/[0.03] transition-all text-base font-normal outline-none"
                           >
                             создания лендинга
                           </button>
                           <button 
                             type="button" 
                             data-value="desktop" 
-                            class="select-item block w-full text-left px-4 py-2 text-[#868686] hover:bg-[#212329] transition-colors text-base font-normal outline-none"
+                            class="select-item block w-full text-left px-5 py-2.5 text-[#F5F5F7] hover:text-[#F5F5F7] hover:bg-white/[0.03] transition-all text-base font-normal outline-none"
                           >
                             создания лендинга+
                           </button>
                           <button 
                             type="button" 
                             data-value="website" 
-                            class="select-item block w-full text-left px-4 py-2 text-[#868686] hover:bg-[#212329] transition-colors text-base font-normal outline-none"
+                            class="select-item block w-full text-left px-5 py-2.5 text-[#F5F5F7] hover:text-[#F5F5F7] hover:bg-white/[0.03] transition-all text-base font-normal outline-none"
                           >
-                            создания вебсайта под ключ
+                            создания вебсайта под&nbsp;ключ
                           </button>
                         </div>
 
-                      </div>, выполненный со вкусом и в срок!
-                      Вы можете написать нам на
-                      <input 
-                        id="email"
-                        type="text" 
-                        placeholder="hello@google.com" 
-                        class="max-w-100 autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_none] field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#868686] underline underline-offset-4 decoration-[#868686] lg:text[30px] outline-none focus:ring-0"
-                      >
-                      или позвонить на номер
-                      <input 
-                        id="number"
-                        type="text" 
-                        placeholder="+375297777777" 
-                        class="max-w-100 autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_#0B0C10] field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#868686] underline underline-offset-4 decoration-[#868686] lg:text[30px] outline-none focus:ring-0"
-                      >.
+                    </div>&nbsp;, выполненная со&nbsp;вкусом и&nbsp;в&nbsp;срок!
+                    Вы можете написать нам на
+                    
+                    <!-- Инпут: Email -->
+                    <input 
+                      id="email"
+                      type="text" 
+                      placeholder="ваша почта" 
+                      size="6"
+                      class="max-w-full [::-webkit-credentials-edit-button]:hidden autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_none] field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#F5F5F7] font-medium placeholder-[#F5F5F7] underline underline-offset-8 decoration-[#868686]/40 focus:decoration-[#F5F5F7] focus:text-[#F5F5F7] transition-colors outline-none focus:ring-0"
+                    >
+                    или позвонить на&nbsp;номер
+                    
+                    <!-- Инпут: Телефон -->
+                    <input 
+                      id="number"
+                      type="text" 
+                      placeholder="Ваш номер" 
+                      size="6"
+                      class="max-w-full [::-webkit-credentials-edit-button]:hidden autofill:[transition:background-color_5000s_ease-in-out_0s,color_5000s_ease-in-out_0s] autofill:[text-fill-color:#868686] autofill:shadow-[inset_0_0_0_1000px_none] field-sizing-content bg-transparent border-none p-0 px-0.5 text-[#F5F5F7] font-medium placeholder-[#F5F5F7] underline underline-offset-8 decoration-[#868686]/40 focus:decoration-[#F5F5F7] focus:text-[#F5F5F7] transition-colors outline-none focus:ring-0"
+                    >&nbsp;.
                   </h2>
                 </div>
 
 
-                <div class="gap-5 lg:gap-0 flex-col-reverse lg:flex-row h-30 lg:mt-10 flex lg:items-center lg:w-200 2xl:max-w-[1920px]
+
+                <div class="gap-5 lg:gap-0 flex-col-reverse lg:flex-row h-30 mt-10 lg:mt-10 flex lg:items-center lg:w-200 2xl:max-w-[1920px]
                       js-scroll-right50
                       lg:opacity-0 lg:transform lg:translate-y-50
                       lg:transition-all lg:duration-1000 delay-500 lg:ease-[cubic-bezier(1)]
                       [&.active]:opacity-100 [&.active]:translate-y-0">
-                  <button class="text-[#868686] font-normal font-inter text-[20px] group w-45 h-10 lg:w-60 lg:h-15 hover:text-[#F5F5F7] transition-all duration-250 hover:border-[#F5F5F7] lg:text-[25px] border rounded-[10px] border-[#868686] cursor-pointer" id="butSend">ОТПРАВИТЬ</button>
+              
+                  <button class="text-[#868686] font-medium font-gilroy hover:text-[#F5F5F7] text-[18px] lg:text-[22px] px-12 py-4 rounded-[10px] border border-white/10 bg-[#0B0C10]/30 hover:border-white/20 hover:bg-white/1 transition-all duration-200 cursor-pointer tracking-wider shrink-0" id="butSend">
+                    ОТПРАВИТЬ
+                  </button>    
+
                   <div class="checkBox flex gap-2 items-center lg:ml-4">
                     <label id="checkBox" class="flex items-center justify-center w-5 h-5 border border-[#F5F5F7] rounded bg-transparent cursor-pointer transition-all has-[:checked]:bg-[#F5F5F7]">
                       <input type="checkbox" id="agreement" required class="sr-only peer" />
                       
-                      <svg class="w-3.5 h-3.5 text-black scale-0 transition-transform duration-200 peer-checked:scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3.5" xmlns="http://w3.org">
+                      <svg class="w-5 h-5 text-black scale-0 transition-transform duration-200 peer-checked:scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3.5" xmlns="http://w3.org">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
                       </svg>
                     </label>
 
-                    <h2 class="text-[#F5F5F7] text-[10px] lg:text-[16px] font-inter font-extralight lg:w-100">Я даю согласие на обработку персональных данных в соответствии с <a href="./politics.html" class="text-blue-600">Политикой конфиденциальности</a></h2>
+                    <h2 class="text-[#86868B] text-[12px] lg:text-[15px] font-gilroy font-light leading-relaxed lg:max-w-[600px]">
+                      Я&nbsp;даю согласие на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="./politics.html" class="text-[#F5F5F7] hover:text-white underline decoration-white/10 hover:decoration-white/30 underline-offset-4 transition-colors">Политикой конфиденциальности</a>
+                    </h2>
+
                   </div>
                 </div>
 
-                <div class="flex gap-5 md:gap-10 mt-5 lg:mt-10
-                      js-scroll-right50
-                      lg:opacity-0 lg:transform lg:translate-y-50
-                      lg:transition-all lg:duration-1000 delay-1000 lg:ease-[cubic-bezier(1)]
-                      [&.active]:opacity-100 [&.active]:translate-y-0">
-                  <div class="w-20 lg:w-30">
-                    <a href="https://t.me/ladanbrol" target="_blank" class="w-40">
-                      <div class="w-20 lg:w-30 flex justify-center items-center h-20 lg:h-30 bg-[#f5f5f7b0] rounded-2xl transition-all duration-300 hover:bg-[#f5f5f7]">
-                        <img class="w-10 h-10 lg:w-20 lg:h-20" src="./../Vector.svg" alt=""> 
+                <div class="flex gap-4 md:gap-6 mt-6 lg:mt-10
+                            js-scroll-right50
+                            lg:opacity-0 lg:transform lg:translate-y-50
+                            lg:transition-all lg:duration-1000 delay-1000 lg:ease-[cubic-bezier(1)]
+                            [&.active]:opacity-100 [&.active]:translate-y-0">
+                  
+                  <!-- КАРТОЧКА 1: TELEGRAM -->
+                  <div class="w-20 sm:w-24 lg:w-30 shrink-0">
+                    <a href="https://t.me/ladanbrol" target="_blank" class="group flex flex-col items-center w-full">
+                      <div class="w-20 sm:w-24 lg:w-30 h-20 sm:h-24 lg:h-30 flex justify-center items-center rounded-2xl border border-white/10 bg-[#0B0C10]/30 hover:border-white/20 hover:bg-white/1 transition-all duration-200">
+                        <svg class="w-8 h-8 lg:w-11 lg:h-11 text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"></path>
+                        </svg>
                       </div>
-
-                      <h2 class="font-medium font-unbounded text-[10px] lg:text-[16px] flex justify-center mt-2">TELEGRAM</h2>
+                      <h2 class="font-Unbounded font-bold text-[9px] lg:text-[12px] tracking-wider text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300 text-center mt-3 uppercase">TELEGRAM</h2>
                     </a>
                   </div>
 
-                  <div class="w-20 lg:w-30">
-                    <a href="mailto:hello@google.com" target="_blank" class="contact-link">
-                      <div class="w-20 lg:w-30 flex justify-center items-center h-20 lg:h-30 bg-[#f5f5f7b0] rounded-2xl transition-all duration-300 hover:bg-[#f5f5f7]">
-                        <img class="lg:w-35 w-25 h-25 lg:h-35" src="./../—Pngtree—email icon design_5571212 1.svg" alt=""> 
+                  <!-- КАРТОЧКА 2: EMAIL -->
+                  <div class="w-20 sm:w-24 lg:w-30 shrink-0">
+                    <a href="mailto:hello@sintex.by" target="_blank" class="group flex flex-col items-center w-full">
+                      <div class="w-20 sm:w-24 lg:w-30 h-20 sm:h-24 lg:h-30 flex justify-center items-center rounded-2xl border border-white/10 bg-[#0B0C10]/30 hover:border-white/20 hover:bg-white/1 transition-all duration-200">
+                        <svg class="w-8 h-8 lg:w-11 lg:h-11 text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0l-7.5-4.615a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                        </svg>
                       </div>
-
-                      <h2 class="font-medium text-[10px] lg:text-[16px] font-unbounded flex justify-center mt-2">EMAIL</h2>
+                      <h2 class="font-Unbounded font-bold text-[9px] lg:text-[12px] tracking-wider text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300 text-center mt-3 uppercase">EMAIL</h2>
                     </a>
                   </div>
 
-                  <div class="w-20 lg:w-30">
-                    <a href="https://www.instagram.com/sintexteam/" target="_blank" class="contact-link">
-                      <div class="w-20 lg:w-30 flex justify-center items-center h-20 lg:h-30 bg-[#f5f5f7b0] rounded-2xl transition-all duration-300 hover:bg-[#f5f5f7]">
-                        <img class="lg:w-20 w-15 h-15 lg:h-20" src="./../free-instagram-logo-icon-3497-thumb.webp" alt=""> 
+                  <!-- КАРТОЧКА 3: INSTAGRAM -->
+                  <div class="w-20 sm:w-24 lg:w-30 shrink-0">
+                    <a href="https://www.instagram.com/sintexteam/" target="_blank" class="group flex flex-col items-center w-full">
+                      <div class="w-20 sm:w-24 lg:w-30 h-20 sm:h-24 lg:h-30 flex justify-center items-center rounded-2xl border border-white/10 bg-[#0B0C10]/30 hover:border-white/20 hover:bg-white/1 transition-all duration-200">
+                        <!-- Современная минималистичная иконка Instagram -->
+                        <svg class="w-8 h-8 lg:w-11 lg:h-11 text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg>
                       </div>
-
-                      <h2 class="font-medium text-[10px] lg:text-[16px] font-unbounded flex justify-center mt-2">INSTAGRAM</h2>
+                      <h2 class="font-Unbounded font-bold text-[9px] lg:text-[12px] tracking-wider text-[#86868B] group-hover:text-[#F5F5F7] transition-colors duration-300 text-center mt-3 uppercase">INSTAGRAM</h2>
                     </a>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </section>
         </div>
+
+        <footer class="tw-footer w-screen 2xl:max-w-[1920px] flex justify-center z-10 backdrop-blur-md border-t border-[#F5F5F7]/50 py-6 md:py-8">
+            <div class="m-3 flex flex-col md:flex-row w-[92vw] lg:w-[85vw] justify-between items-center gap-6 md:gap-4">
+              
+              <div class="flex flex-col md:flex-row items-center h-full gap-2 md:gap-4 text-center md:text-left">
+                <div class="flex items-center gap-1 select-none">
+                  <span class="text-[#F5F5F7] font-Unbounded font-medium text-[15px] md:text-[18px]">©</span>
+                  <span class="text-[#F5F5F7] font-Unbounded font-medium text-[15px] md:text-[18px] tracking-wide">sintex</span>
+                </div>
+                
+                <span class="text-white/10 hidden md:flex font-Unbounded font-light text-xl">|</span>
+
+                <a href="./politics.html" class="text-xs md:text-sm font-gilroy font-light text-[#86868B] hover:text-[#F5F5F7] transition-colors duration-300 tracking-wide underline decoration-white/10 hover:decoration-white/30 underline-offset-4">
+                  политика конфиденциальности
+                </a>
+              </div>
+
+              <div class="flex items-center">
+                <a href="https://github.com/0adanbro0" target="_blank" class="flex items-center transition-all duration-300 transform hover:-translate-y-0.5 hover:opacity-80" aria-label="GitHub Profile">
+                  <img class="w-6 h-6 md:w-8 md:h-8 object-contain filter drop-shadow-[0_2px_8px_rgba(255,255,255,0.05)]" loading="lazy" src="./Frame-33 (1).webp" alt="GitHub">
+                </a>
+              </div>
+
+              <!-- Правый блок: Прямой контакт -->
+              <div class="flex items-center">
+                <a href="mailto:hello@sintex.by" class="text-[#86868B] hover:text-[#F5F5F7] text-base md:text-[18px] font-gilroy font-light tracking-wide transition-colors duration-300 flex items-center gap-2">
+                  <span class="w-1 h-1 rounded-full bg-white/20 group-hover:bg-white"></span>
+                  hello@sintex.by
+                </a> 
+              </div>
+
+            </div>
+          </footer>
+
       </div>
     </div>
-    <script type="module" src="./src/main.ts" defer></script>
+
   </body>
 </html>

@@ -1,10 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 @import "tailwindcss";
+
 
 @theme {
     --prefix: tw;
-    --font-unbounded: 'Unbounded', sans-serif;
-    --font-inter: 'Inter', sans-serif;
+    --font-Unbounded: 'Unbounded', sans-serif;
+    --font-gilroy: 'gilroy', sans-serif;
 
     --breakpoint-laptop-projects: 1024px;
 
@@ -15,6 +17,16 @@
         }
     }
     --animate-edge-slide: edge-slide 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+  @keyframes scrollBall {
+    0% { transform: translateY(0); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; transform: translateY(8px); }
+    100% { opacity: 0; transform: translateY(8px); }
 }
 
 @media (min-width: 2000px) {
@@ -45,14 +57,8 @@ html{
     --greColor--: #868686;
 }
 
-.tw-menu-header{
-    border-width: 0px 0px 1px 0px;
-    border-color: var(--whiteColor--);
-}
-
 .tw-footer {
-    border-width: 1px 0px 0px 0px;
-    border-color: var(--whiteColor--);
+    border-width: 2px 0px 0px 0px;
 }
 
 body {
@@ -72,9 +78,9 @@ body {
     height: 10000px; 
         
     background-image: 
-        linear-gradient(to right, var(--whiteColor--) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--whiteColor--) 1px, transparent 1px);
-    background-size: 350px 350px; 
+        linear-gradient(to right, #f5f5f735 1px, transparent 1px),
+        linear-gradient(to bottom, #f5f5f735 1px, transparent 1px);
+    background-size: 100px 100px; 
         
     transform: rotate(45deg);
     transform-origin: top center;

@@ -2,17 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./fav3006_Монтажная область 1.webp" />
+    <link rel="icon" type="image/png" href="./0307 черный фон_Монтажная область 1.png" sizes="96x96" />
+    <link rel="shortcut icon" href="./0307 черный фон_Монтажная область 1.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./0307 черный фон_Монтажная область 1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Разработка вебсайтов для малого бизнеса под ключ от команды Sintex">
     <title>Sintex — Digital Service | Вебсайты под ключ</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./output.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDPRV61L52"></script>
   <script>
@@ -22,6 +18,8 @@
 
     gtag('config', 'G-EDPRV61L52');
   </script>
+    <script type="module" crossorigin src="./src/main.ts"></script>
+    <link rel="stylesheet" crossorigin href="./style.css">
   </head>
   <body>
     <div class="tw-main2 relative w-screen h-auto overflow-hidden flex 2xl:justify-center 2xl:max-w-[2560px]">
@@ -29,66 +27,114 @@
         <div class="tw-bg-wrapper">
           <div class="tw-bg"></div>
         </div>
-        <div class="tw-menu-header fixed w-screen flex justify-center z-10 backdrop-blur-md 2xl:2xl:max-w-[1920px]
+        <div class="2xl:max-w-[1920px] lg:w-screen h-full">
+        <header class="tw-menu-header fixed w-screen flex h-25 justify-center z-50 2xl:max-w-[1920px] transition-all duration-1000 px-6 py-3.5
                 js-scroll-right20
-                lg:opacity-0 lg:transform lg:-translate-y-15
-                lg:transition-all lg:duration-500 lg:ease-[cubic-bezier(1)]
-                [&.active]:opacity-100 [&.active]:translate-y-0">
-          <div class="conainer-menu-header m-3 flex w-[90vw] justify-between">
-            <div class="name-company-menu">
-              <a href="./index.html" class="contant-name-company-menu text-[#F5F5F7] font-unbounded font-extrabold text-3xl lg:text-5xl tracking-wider">
-                Sintex
+                lg:opacity-0 lg:transform lg:-translate-y-10
+                lg:transition-all
+                [&.active]:opacity-100 [&.active]:translate-y-0 lg:ease-[cubic-bezier(0.16,1,0.3,1)]">
+          <div class="container-menu-header flex w-[90vw] justify-between items-center ">
+            
+            <!-- Блок Логотипа -->
+            <div class="name-company-menu flex items-center">
+              <a href="/" class="contant-name-company-menu flex items-center transition-transform duration-300 hover:scale-105" aria-label="Sintex">
+                <img src="/0307 черный фон_Монтажная область 1.webp" width="50" height="50" alt="Sintex Logo" class="object-contain rounded-xl filter drop-shadow-[0_2px_10px_rgba(255,255,255,0.1)]">
               </a>
             </div>
 
-            <div class="but-nav-menu gap-10 flex items-center">
-              <div>
-                <a href="./aboutUs.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">о нас</a>
+            <!-- Главная навигация с групповым эффектом фокуса (Nav Group) -->
+            <div class="but-nav-menu gap-8 lg:gap-12 flex items-center group/nav">
+              
+              <div class="relative group/link">
+                <a href="./aboutUs.html" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">о&nbsp;нас</a>
+            
               </div>
-              <div>
-                <a href="./contacts.html" class="text-[#F5F5F7] text-2xl font-inter font-normal hidden md:flex lg:text-3xl">контакты</a>
+                
+              <div class="relative group/link">
+                <a href="./#projects" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">проекты</a>
+              </div>
+                
+              <div class="relative group/link">
+                <a href="./contacts.html" class="text-[#86868B] hover:text-[#F5F5F7] text-lg lg:text-xl font-gilroy font-medium hidden md:flex transition-all duration-300 group-hover/nav:opacity-40 hover:!opacity-100 tracking-wide">контакты</a>
               </div>
 
               <div class="md:hidden burger-menu flex items-center z-30">
-                <div id="burger-menu" class="icon group w-15 h-10 flex flex-col justify-between cursor-pointer">
-
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out
+                <div id="burger-menu" class="icon group w-10 h-7 flex flex-col justify-between cursor-poGeist">
+                  
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out
                               group-[.is-open]:-translate-y-8 group-[.is-open]:opacity-0"></div>
                   
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out origin-center
                               group-[.is-open]:rotate-45"></div>
                   
-                  <div class="bg-[#F5F5F7] w-full h-1.5 rounded-2xl transition-all duration-300 ease-in-out origin-center
-                              group-[.is-open]:-translate-y-4.25 group-[.is-open]:-rotate-45"></div>
+                  <div class="bg-[#F5F5F7] w-full h-[3px] rounded-full transition-all duration-300 ease-in-out origin-center
+                              group-[.is-open]:-translate-y-3 group-[.is-open]:-rotate-45"></div>
                 </div>
               </div>
+
             </div>
           </div>
-        </div>
+        </header>
 
-        <section id="burgerMenuSection" class="w-screen h-screen bg-[#0b0c109d] z-20 [&.active]:flex hidden">
-          <div class="w-screen flex items-center m-10">
-            <div class="flex flex-col gap-30">
-              <div>
-                <a href="./aboutUs.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">о нас</a>
+        <section id="burgerMenuSection" class="w-screen min-h-200 bg-[#0B0C10] inset-0 z-40 [&.active]:flex hidden flex-col justify-between p-8 pt-32 overflow-y-auto">
+
+          <div class="w-full flex flex-col gap-8 relative z-10 pl-2">
+            <div>
+              <a href="./aboutUs.html" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                о нас
+              </a>
+            </div>
+            <div>
+              <a href="#projects" id="projectsBut" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                проекты
+              </a>
+            </div>
+            <div>
+              <a href="./contacts.html" class="navMenu text-[#F5F5F7] active:text-[#86868B] text-4xl sm:text-5xl font-Unbounded font-bold tracking-tight block transition-colors">
+                контакты
+              </a>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col gap-8 relative z-10 mt-auto pt-12 border-t border-white/[0.04]">
+              
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-between items-start font-gilroy">
+              <div class="flex flex-col gap-2">
+                <span class="text-[#86868B] text-xs uppercase tracking-widest font-semibold">Связь в Telegram</span>
+                <a href="https://t.me/SintexTeam" target="_blank" class="text-[#F5F5F7] text-lg font-medium hover:text-white flex items-center gap-2">
+                  <span>@SintexTeam</span>
+                </a>
               </div>
-              <div>
-                <a href="./contacts.html" class="navMenu text-[#F5F5F7] text-5xl font-inter font-normal md:flex lg:text-3xl">контакты</a>
+              <div class="flex flex-col gap-2">
+                <span class="text-[#86868B] text-xs uppercase tracking-widest font-semibold">Звонок менеджеру</span>
+                <a href="tel:+375 (44) 497-44-76" class="text-[#F5F5F7] text-lg font-medium tracking-wide">
+                  +375 (44) 497-44-76
+                </a>
               </div>
             </div>
+
+            <!-- Юридический микро-футер -->
+            <div class="text-[10px] text-[#444449] font-mono leading-relaxed space-y-1">
+              <p>© 2026 Sintex. Разработка сайтов под ключ.</p>
+              <p>плательщик НПД : Дьяченко Елена Леонидовна. Работа по договору.</p>
+            </div>
+
           </div>
         </section>
-        <div class="block mt-18 [&.active]:hidden" id="mainSection">
-          <section class="block">
+
+
+        <div class="block [&.active]:hidden" id="mainSection">
+          <section class="flex flex-col">
+            <div class="h-25"></div>
             <div class="lg:mt-30 h-15 w-screen">
               <div class="flex justify-center ">
-                <h2 class="text-[#F5F5F7] text-[16px] md:text-[25px] lg:text-[30px] font-unbounded font-extrabold tracking-widest w-[90vw] flex justify-center">Политика обработки персональных данных</h2>
+                <h2 class="text-[#F5F5F7] text-[16px] md:text-[25px] lg:text-[30px] font-Unbounded font-extrabold tracking-widest w-[90vw] flex justify-center">Политика обработки персональных данных</h2>
               </div>
             </div>
             <div class="w-screen lg:w-screen flex justify-center lg:h-auto 2xl:max-w-[1920px]">
               <div class="flex justify-center">
                 <div class="flex justify-center">
-                  <h2 class="text-[#F5F5F7] w-[95%] text-[16px] md:text-[20px] lg:text-[25px] font-inter font-light md:w-[90%] lg:w-225 lg:mt-10">
+                  <h2 class="text-[#F5F5F7] w-[95%] text-[16px] md:text-[20px] lg:text-[25px] font-Geist font-light md:w-[90%] lg:w-225 lg:mt-10">
                     Настоящая Политика конфиденциальности регулирует порядок обработки и использования персональных и иных данных сайта Исполнителя Дьяченко Елена Леонидовна (далее https://sintex.by/).
                     Передавая номер телефона, email и иные данные посредством Сайта, Пользователь подтверждает свое согласие на использование указанных данных на условиях, изложенных в настоящей Политике конфиденциальности.
                     Целью настоящей Политики является обеспечение надлежащей защиты информации о Пользователях, в том числе их персональных данных, от несанкционированного доступа и разглашения.
@@ -165,15 +211,49 @@
                     <br>Регистрационный номер и УНП 400861089
                     <br>Юридический и почтовый адрес: 247200, г. Жлобин, 16 мкр-н, д 38, кВ 135.
                     <br>Тел. +375 29 69 397 50
-                    <br><span class="flex gap-1">E-mail: <a href="mailto:hello@google.com" class=" text-[16px] font-inter font-light md:flex lg:text-[25px] text-blue-600">hello@sintex.by</a></span> 
+                    <br><span class="flex gap-1">E-mail: <a href="mailto:hello@google.com" class=" text-[16px] font-Geist font-light md:flex lg:text-[25px] text-blue-600">hello@sintex.by</a></span> 
                   </h2>
                 </div>
               </div>
             </div>
           </section>
         </div>
+
+        <footer class="tw-footer w-screen 2xl:max-w-[1920px] flex justify-center z-10 backdrop-blur-md border-t border-[#F5F5F7]/50 py-6 md:py-8">
+            <div class="m-3 flex flex-col md:flex-row w-[92vw] lg:w-[85vw] justify-between items-center gap-6 md:gap-4">
+              
+              <div class="flex flex-col md:flex-row items-center h-full gap-2 md:gap-4 text-center md:text-left">
+                <div class="flex items-center gap-1 select-none">
+                  <span class="text-[#F5F5F7] font-Unbounded font-medium text-[15px] md:text-[18px]">©</span>
+                  <span class="text-[#F5F5F7] font-Unbounded font-medium text-[15px] md:text-[18px] tracking-wide">sintex</span>
+                </div>
+                
+                <span class="text-white/10 hidden md:flex font-Unbounded font-light text-xl">|</span>
+
+                <a href="./politics.html" class="text-xs md:text-sm font-gilroy font-light text-[#86868B] hover:text-[#F5F5F7] transition-colors duration-300 tracking-wide underline decoration-white/10 hover:decoration-white/30 underline-offset-4">
+                  политика конфиденциальности
+                </a>
+              </div>
+
+              <div class="flex items-center">
+                <a href="https://github.com/0adanbro0" target="_blank" class="flex items-center transition-all duration-300 transform hover:-translate-y-0.5 hover:opacity-80" aria-label="GitHub Profile">
+                  <img class="w-6 h-6 md:w-8 md:h-8 object-contain filter drop-shadow-[0_2px_8px_rgba(255,255,255,0.05)]" loading="lazy" src="./Frame-33 (1).webp" alt="GitHub">
+                </a>
+              </div>
+
+              <!-- Правый блок: Прямой контакт -->
+              <div class="flex items-center">
+                <a href="mailto:hello@sintex.by" class="text-[#86868B] hover:text-[#F5F5F7] text-base md:text-[18px] font-gilroy font-light tracking-wide transition-colors duration-300 flex items-center gap-2">
+                  <span class="w-1 h-1 rounded-full bg-white/20 group-hover:bg-white"></span>
+                  hello@sintex.by
+                </a> 
+              </div>
+
+            </div>
+          </footer>
+
       </div>
     </div>
-    <script type="module" src="./src/main.ts" defer></script>
+
   </body>
 </html>
