@@ -224,7 +224,7 @@ document.getElementById("butSend")?.addEventListener("click", (event) => {
           tarif: selectedValue.innerHTML
         };
         
-        fetch('/api/send-telegram', {
+        fetch('https://sintex.by', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
